@@ -31,6 +31,9 @@ public void setName(String newAccName){
 
 public String getName(){
 	return name;
+
+public double withdraw(){
+	return withdraw;
 }
 
 }
