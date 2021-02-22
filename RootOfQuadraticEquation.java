@@ -1,37 +1,34 @@
 import java.util.Scanner;
+
+import java.lang.Math;
+
 public class RootOfQuadraticEquation{
- public static void main(String [] args){
+	public static void main(String[] args){
 	double firstRoot = 0 , secondRoot = 0;
-Scanner loi = new Scanner(System.in);
-System.out.println("Enter the value of a");
-double a = loi.nextDouble();
+	double a;
+	double b;
+	double c; 
+	Scanner space = new Scanner (System.in);
+	System.out.println("Enter your first integer...");
+	 a = space.nextInt();
 
-System.out.println("Enter the value of b");
-double b = loi.nextDouble();
+	System.out.println("Enter your second integer...");
+	 b = space.nextInt();
 
-System.out.println("Enter the value of c");
-double c = loi.nextDouble();
+	System.out.println("Enter your third integer...");
+	 c = space.nextInt();
 
-double discriminant = (b*b)-(4*a*c);
-double sqrt = Math.sqrt(discriminant);
+	firstRoot = -b + Math.sqrt(Math.pow(b,2)) - (4 * a * c) / (2 * a);
+	System.out.printf("the answer of first root: " + firstRoot +"\n");
 
-if (discriminant > 0){
-	firstRoot = (-b + sqrt)/(2 * a);
-	secondRoot = (-b - sqrt)/(2 * a);
-System.out.println("Roots are " +  firstRoot  +  " and "  + secondRoot);
-
-if(discriminant == 0){
-System.out.println("Root is  " + (-b + sqrt)/(2 * a) );
-
+	
+	secondRoot = -b - Math.sqrt(Math.pow(b,2)) - (4 * a * c) / (2 * a);
+	System.out.printf("the answer of second root: " + secondRoot +"\n");
 
 
 
-}
+	
 
-
-
-
-}
 
 
 
@@ -40,6 +37,18 @@ System.out.println("Root is  " + (-b + sqrt)/(2 * a) );
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
